@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    src: url('../fonts/Ubuntu-Medium.ttf');
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+body {
+    font-family: 'Ubuntu';
+}
