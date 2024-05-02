@@ -1,0 +1,48 @@
+.steps-tracker {
+    background-image: url('../images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    padding:50px 30px 0 30px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    gap:40px;
+}
+
+.step {
+    display:flex;
+    gap:15px;
+
+    & h2 {
+        font-size:1.1rem;
+        color:#fff;
+        font-weight:700;
+        letter-spacing:2px;
+    }
+}
+
+.step-order {
+    border:1px solid #fff;
+    padding:10px 15px;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: .15s linear;
+
+    &:hover {
+        background-color: $steps-background;
+        border-color: $steps-background;
+        color:black;
+    }
+}
+
+.step .active-step {
+    background-color: $steps-background;
+    border-color: $steps-background;
+    color:black;
+}
+
+.step-number {
+    display:block;
+    font-weight:500;
+    color:$instructions-text;
+    margin-bottom:5px;
+}
