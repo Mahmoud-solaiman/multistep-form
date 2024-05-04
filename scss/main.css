@@ -20,12 +20,12 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 93px 0;
+  padding: 95px 0;
 }
 
 .app {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   background-color: #fff;
   width: 70%;
   padding: 20px;
@@ -38,7 +38,7 @@ body {
   padding: 50px 30px 0 30px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 33%;
   gap: 40px;
 }
 
@@ -47,7 +47,7 @@ body {
   gap: 15px;
 }
 .step h2 {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
@@ -55,7 +55,7 @@ body {
 
 .step-order {
   border: 1px solid #fff;
-  padding: 10px 15px;
+  padding: 10px 13px;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.15s linear;
@@ -77,4 +77,69 @@ body {
   font-weight: 500;
   color: #9699ab;
   margin-bottom: 5px;
+}
+
+.steps {
+  padding-top: 40px;
+}
+
+.step-heading {
+  margin-bottom: 40px;
+}
+.step-heading h1 {
+  font-weight: 700;
+  color: #02295a;
+  margin-bottom: 10px;
+}
+.step-heading h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #9699ab;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+.item .label {
+  color: #02295a;
+  font-weight: 700;
+  cursor: pointer;
+}
+.item input {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-left: 6px;
+  padding: 15px;
+  border: none;
+  outline: 1px solid #9699ab;
+  border-radius: 5px;
+  color: #02295a;
+}
+.item input:focus {
+  outline: 2px solid #02295a;
+}
+
+.control-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  direction: rtl;
+  padding-top: 65px;
+}
+
+.next-btn {
+  font-size: 1rem;
+  font-font-weight: 700;
+  padding: 0.8em 1.7em;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #02295a;
+  cursor: pointer;
+}
+.next-btn:hover {
+  opacity: 0.9;
 }/*# sourceMappingURL=main.css.map */

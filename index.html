@@ -41,9 +41,30 @@
             </div>
             <div class="current-step">
                 <div class="steps">
-                    <div class="step-one"></div>
+                    <div class="step-one">
+                        <div class="step-heading">
+                            <h1>Personal info</h1>
+                            <h3 class="step-instruction">Please provide your name, email address, and phone number.</h3>
+                        </div>
+                        <form class="form">
+                            <div class="item">
+                                <label for="name" class="label">Name</label>
+                                <input type="text" placeholder="e.g. Stephen King" id="name">
+                            </div>
+                            <div class="item">
+                                <label for="email" class="label">Email Address</label>
+                                <input type="email" placeholder="e.g. stephenking@lorem.com" id="email" required>
+                            </div>
+                            <div class="item">
+                                <label for="phone" class="label">Phone Number</label>
+                                <input type="tel" placeholder="e.g. +1234567890" id="phone" required>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="control-btns"></div>
+                <div class="control-btns">
+                    <button class="next-btn" type="submit">Next Step</button>
+                </div>
             </div>
         </div>
     </div>
