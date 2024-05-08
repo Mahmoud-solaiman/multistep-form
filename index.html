@@ -41,7 +41,7 @@
             </div>
             <div class="current-step">
                 <div class="steps">
-                    <div class="step-one">
+                    <div class="step-one phase">
                         <div class="step-heading">
                             <h1>Personal info</h1>
                             <h3 class="step-instruction">Please provide your name, email address, and phone number.</h3>
@@ -49,21 +49,66 @@
                         <form class="form">
                             <div class="item">
                                 <label for="name" class="label">Name</label>
-                                <input type="text" placeholder="e.g. Stephen King" id="name">
+                                <input type="text" placeholder="e.g. Stephen King" id="name" autocomplete="on">
                             </div>
                             <div class="item">
                                 <label for="email" class="label">Email Address</label>
-                                <input type="email" placeholder="e.g. stephenking@lorem.com" id="email" required>
+                                <input type="email" placeholder="e.g. stephenking@lorem.com" id="email" autocomplete="on" required>
                             </div>
                             <div class="item">
                                 <label for="phone" class="label">Phone Number</label>
-                                <input type="tel" placeholder="e.g. +1234567890" id="phone" required>
+                                <input type="tel" placeholder="e.g. +1234567890" id="phone" autocomplete="on" required>
                             </div>
                         </form>
                     </div>
+                    <div class="step-two phase">
+                        <div class="step-heading">
+                            <h1>Select your plan</h1>
+                            <h3 class="step-instruction">You have the option of monthly or yearly billing.</h3>
+                        </div>  
+                        <div class="billing-cards">
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="./images/icon-arcade.svg" alt="arcade icon">
+                                </div>
+                                <div class="plan">
+                                    <h4 class="plan-type">Arcade</h4>
+                                    <h5 class="cost">$9/mo</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="./images/icon-advanced.svg" alt="arcade icon">
+                                </div>
+                                <div class="plan">
+                                    <h4 class="plan-type">Advanced</h4>
+                                    <h5 class="cost">$12/mo</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-icon">
+                                    <img src="./images/icon-pro.svg" alt="arcade icon">
+                                </div>
+                                <div class="plan">
+                                    <h4 class="plan-type">Pro</h4>
+                                    <h5 class="cost">$15/mo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="monthly-or-yearly">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" name="plan" id="monthly">
+                            <div class="plan-toggle">
+                                <div class="plan-toggle-ball"></div>
+                            </div>
+                            <input type="radio" name="plan" id="yearly">
+                            <label for="yearly">Yearly</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="control-btns">
-                    <button class="next-btn" type="submit">Next Step</button>
+                    <button class="go-back-btn">Go Back</button>
+                    <button class="next-btn">Next Step</button>
                 </div>
             </div>
         </div>

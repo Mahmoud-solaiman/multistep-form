@@ -1,0 +1,72 @@
+.billing-cards {
+    display:flex;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.card {
+    border:1px solid #dadada;
+    width:33%;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    transition: .12s linear;
+
+    &:hover {
+        border-color:$checkbox-background;
+        background:#a9a5fd1a;
+    }
+}
+
+.card-icon {
+    margin-bottom:40px;
+}
+
+.plan-type {
+    margin-bottom:5px;
+    color:$next-step-btn;
+    font-size:1.05rem;
+}
+
+.cost {
+    font-weight:500;
+    color:#9699ab;
+}
+
+.monthly-or-yearly {
+    margin:50px 0 ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background-color:#f1f1f1;
+    padding:.8em 0;
+    border-radius:8px;
+}
+
+.plan-toggle {
+    width:50px;
+    height:23px;
+    background-color: $next-step-btn;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:0 3px;
+    
+    & .plan-toggle-ball {
+        width:17px;
+        height:17px;
+        background-color:#fff;
+        border-radius:50%;
+    }
+}
+
+.monthly-or-yearly label {
+    font-weight:700;
+    color:rgb(161, 151, 151);
+    cursor:pointer;
+}
+
+#monthly, #yearly {
+    display:none;
+}

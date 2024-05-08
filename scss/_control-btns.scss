@@ -1,8 +1,7 @@
 .control-btns {
     display:flex;
     justify-content: space-between;
-    align-items: flex-end;
-    direction: rtl;
+    align-items:center;
     padding-top:65px;
 }
 
@@ -20,5 +19,21 @@
     
     &:hover {
         opacity:.9;
+    }
+}
+
+.go-back-btn {
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    color:#9699ab;
+    transition: .15s linear;
+    font: {
+        size:1.05rem;
+        weight:700;
+    }
+
+    &:hover {
+        color:$next-step-btn;
     }
 }

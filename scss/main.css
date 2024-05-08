@@ -79,8 +79,16 @@ body {
   margin-bottom: 5px;
 }
 
+.current-step {
+  width: 50%;
+}
+
 .steps {
   padding-top: 40px;
+}
+
+.step-one {
+  display: none;
 }
 
 .step-heading {
@@ -119,14 +127,13 @@ body {
   color: #02295a;
 }
 .item input:focus {
-  outline: 2px solid #02295a;
+  outline: 1px solid #473dff;
 }
 
 .control-btns {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  direction: rtl;
+  align-items: center;
   padding-top: 65px;
 }
 
@@ -142,4 +149,88 @@ body {
 }
 .next-btn:hover {
   opacity: 0.9;
+}
+
+.go-back-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #9699ab;
+  transition: 0.15s linear;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.go-back-btn:hover {
+  color: #02295a;
+}
+
+.billing-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #dadada;
+  width: 33%;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.12s linear;
+}
+.card:hover {
+  border-color: #473dff;
+  background: rgba(169, 165, 253, 0.1019607843);
+}
+
+.card-icon {
+  margin-bottom: 40px;
+}
+
+.plan-type {
+  margin-bottom: 5px;
+  color: #02295a;
+  font-size: 1.05rem;
+}
+
+.cost {
+  font-weight: 500;
+  color: #9699ab;
+}
+
+.monthly-or-yearly {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #f1f1f1;
+  padding: 0.8em 0;
+  border-radius: 8px;
+}
+
+.plan-toggle {
+  width: 50px;
+  height: 23px;
+  background-color: #02295a;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+.plan-toggle .plan-toggle-ball {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.monthly-or-yearly label {
+  font-weight: 700;
+  color: rgb(161, 151, 151);
+  cursor: pointer;
+}
+
+#monthly, #yearly {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,13 @@
+.current-step {
+    width:50%;
+}
+
 .steps {
     padding-top:40px;
+}
+
+.step-one {
+    display:none;
 }
 
 .step-heading {
@@ -44,7 +52,7 @@
         color:$next-step-btn;
 
         &:focus {
-            outline:2px solid $next-step-btn;
+            outline:1px solid $checkbox-background;
         }
     }
 }
