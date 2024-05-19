@@ -57,7 +57,6 @@ body {
   border: 1px solid #fff;
   padding: 10px 13px;
   border-radius: 50px;
-  cursor: pointer;
   transition: 0.15s linear;
 }
 .step-order:hover {
@@ -88,7 +87,7 @@ body {
 }
 
 .step-one {
-  display: none;
+  display: block;
 }
 
 .step-heading {
@@ -131,7 +130,8 @@ body {
 }
 
 .control-btns {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
   padding-top: 65px;
@@ -152,6 +152,7 @@ body {
 }
 
 .go-back-btn {
+  visibility: hidden;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -162,6 +163,10 @@ body {
 }
 .go-back-btn:hover {
   color: #02295a;
+}
+
+.step-two {
+  display: none;
 }
 
 .billing-cards {
@@ -216,6 +221,7 @@ body {
   border-radius: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 3px;
 }
 .plan-toggle .plan-toggle-ball {
@@ -223,6 +229,7 @@ body {
   height: 17px;
   background-color: #fff;
   border-radius: 50%;
+  transition: 0.15s linear;
 }
 
 .monthly-or-yearly label {
@@ -231,6 +238,64 @@ body {
   cursor: pointer;
 }
 
-#monthly, #yearly {
+.monthly-or-yearly input[type=radio] {
   display: none;
+}
+
+#monthly:checked ~ label[for=monthly] {
+  color: #02295a;
+}
+
+#monthly:checked ~ .plan-toggle .plan-toggle-ball {
+  translate: -80%;
+}
+
+#yearly:checked ~ label[for=yearly] {
+  color: #02295a;
+}
+
+#yearly:checked ~ .plan-toggle .plan-toggle-ball {
+  translate: 80%;
+}
+
+.discount {
+  color: #02295a;
+  margin-top: 7px;
+}
+
+.selected-card {
+  border-color: #473dff;
+  background: rgba(169, 165, 253, 0.1019607843);
+}
+
+.step-three {
+  display: none;
+}
+
+.service-card {
+  display: grid;
+  grid-template-columns: 10% 78% 12%;
+  align-items: center;
+  border: 1px solid #dadada;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 0.15s linear;
+}
+.service-card:hover {
+  border-color: #473dff;
+  background: rgba(169, 165, 253, 0.1019607843);
+}
+.service-card:last-of-type {
+  margin-bottom: 50px;
+}
+
+.service-cost {
+  color: #473dff;
+}
+
+.checkbox-services {
+  width: 45%;
+  height: 45%;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

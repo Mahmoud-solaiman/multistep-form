@@ -49,7 +49,7 @@
                         <form class="form">
                             <div class="item">
                                 <label for="name" class="label">Name</label>
-                                <input type="text" placeholder="e.g. Stephen King" id="name" autocomplete="on">
+                                <input type="text" placeholder="e.g. Stephen King" id="name" autocomplete="on" required>
                             </div>
                             <div class="item">
                                 <label for="email" class="label">Email Address</label>
@@ -96,13 +96,45 @@
                             </div>
                         </div>
                         <div class="monthly-or-yearly">
-                            <label for="monthly">Monthly</label>
                             <input type="radio" name="plan" id="monthly">
+                            <input type="radio" name="plan" id="yearly">
+                            <label for="monthly" class="monthly-label">Monthly</label>  
                             <div class="plan-toggle">
                                 <div class="plan-toggle-ball"></div>
+                            </div> 
+                            <label for="yearly" class="yearly-label">Yearly</label>
+                        </div>
+                    </div>
+                    <div class="step-three phase">
+                        <div class="step-heading">
+                            <h1>Pick add-ons</h1>
+                            <h3 class="step-instruction">Add-ons help enhance your gaming experience</h3>
+                        </div> 
+                        <div class="services-container">
+                            <div class="service-card">
+                                <input type="checkbox" class="checkbox-services">
+                                <div class="service-description">
+                                    <h4 class="service-label plan-type">Online service</h4>
+                                    <h5 class="service-benefits cost">Access to multiplayer games</h5>
+                                </div>
+                                <h5 class="service-cost cost">+$1/mo</h5>
                             </div>
-                            <input type="radio" name="plan" id="yearly">
-                            <label for="yearly">Yearly</label>
+                            <div class="service-card">
+                                <input type="checkbox" class="checkbox-services">
+                                <div class="service-description">
+                                    <h4 class="service-label plan-type">Larger storage</h4>
+                                    <h5 class="service-benefits cost">Extra 1TB of cloud save</h5>
+                                </div>
+                                <h5 class="service-cost cost">+$2/mo</h5>
+                            </div>
+                            <div class="service-card">
+                                <input type="checkbox" class="checkbox-services">
+                                <div class="service-description">
+                                    <h4 class="service-label plan-type">Customizable profile</h4>
+                                    <h5 class="service-benefits cost">Custom theme on your profile</h5>
+                                </div>
+                                <h5 class="service-cost cost">+$2/mo</h5>
+                            </div>
                         </div>
                     </div>
                 </div>

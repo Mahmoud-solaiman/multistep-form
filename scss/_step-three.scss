@@ -1,0 +1,33 @@
+.step-three {
+    display:none;
+}
+
+.service-card {
+    display:grid;
+    grid-template-columns:10%  78% 12%;
+    align-items:center;
+    border:1px solid #dadada;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    transition: .15s linear;
+
+    &:hover {
+        border-color:$checkbox-background;
+        background:#a9a5fd1a;;
+    }
+    
+    &:last-of-type {
+        margin-bottom:50px;
+    }
+} 
+
+.service-cost {
+    color:$checkbox-background;
+}
+
+.checkbox-services {
+    width:45%;
+    height:45%;
+    cursor:pointer;
+}

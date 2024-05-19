@@ -1,5 +1,6 @@
 .control-btns {
-    display:flex;
+    display:grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     align-items:center;
     padding-top:65px;
@@ -23,6 +24,7 @@
 }
 
 .go-back-btn {
+    visibility: hidden;
     border:none;
     background:transparent;
     cursor:pointer;
