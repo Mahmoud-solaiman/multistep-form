@@ -15,12 +15,12 @@ body {
 }
 
 .container {
-  background-color: hsl(217, 100%, 97%);
+  background-color: #f0f6ff;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 95px 0;
+  padding: 127px 0;
 }
 
 .app {
@@ -79,11 +79,12 @@ body {
 }
 
 .current-step {
-  width: 50%;
+  width: 52%;
 }
 
 .steps {
   padding-top: 40px;
+  height: 90%;
 }
 
 .step-one {
@@ -134,7 +135,6 @@ body {
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
-  padding-top: 65px;
 }
 
 .next-btn {
@@ -298,4 +298,89 @@ body {
   width: 45%;
   height: 45%;
   cursor: pointer;
+}
+
+.step-four {
+  display: none;
+}
+
+.subscription-details {
+  background-color: #f0f0f0;
+  padding: 25px 25px 10px 25px;
+  border-radius: 18px;
+}
+
+.subscription-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #02295a;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.change-btn {
+  background: transparent;
+  border: none;
+  color: #5a5a5a;
+  text-decoration: underline;
+  font-size: 0.97rem;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.further-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.service-type h4, .service-price h4 {
+  margin-bottom: 25px;
+}
+
+.service-type h4 {
+  color: #5a5a5a;
+  font-weight: 500;
+}
+
+.service-price h4 {
+  color: #02295a;
+}
+
+.total-cost {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.total {
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  color: #473dff;
+}
+
+.step-five {
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.thank-you {
+  color: #02295a;
+  font-size: 1.8rem;
+}
+
+.thank-you-message {
+  line-height: 25px;
+  font-size: 0.98rem;
+  text-align: center;
+  color: #5a5a5a;
 }/*# sourceMappingURL=main.css.map */

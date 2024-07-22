@@ -5,6 +5,8 @@ const form = document.querySelector('.form');
 const stepOne = document.querySelector('.step-one');
 const stepTwo = document.querySelector('.step-two');
 const stepThree = document.querySelector('.step-three');
+const stepFour = document.querySelector('.step-four');
+const stepFive = document.querySelector('.step-five');
 const backBtn = document.querySelector('.go-back-btn');
 const stepsOrder = document.querySelectorAll('.step-order');
 const monthly = document.getElementById('monthly');
@@ -13,6 +15,10 @@ const planCost = document.querySelectorAll('.cost');
 const monthlyLabel = document.querySelector('.monthly-label');
 const yearlyLabel = document.querySelector('.yearly-label');
 const cards = document.querySelectorAll('.card');
+const checkBoxes = document.querySelectorAll('.checkbox-services');
+const costs = document.querySelectorAll('.service-cost');
+
+
 
 //View
 function stepsChecker(){
@@ -43,6 +49,29 @@ function stepsChecker(){
             stepOrder.classList = 'step-order';
         });
         stepsOrder[2].classList = 'step-order active-step';
+        if(yearly.checked) {
+            costs[0].textContent = '+$10/yr';
+            costs[1].textContent = '+$20/yr';
+            costs[2].textContent = '+$20/yr';
+        } else {
+            costs[0].textContent = '+$1/mo';
+            costs[1].textContent = '+$2/mo';
+            costs[2].textContent = '+$2/mo';
+        }
+    } else if(getComputedStyle(stepThree).display === 'block'){
+        stepThree.style.display = 'none';
+        stepFour.style.display = 'block';
+        nextStepBtn.textContent = 'Confirm';
+        stepsOrder.forEach(stepOrder => {
+            stepOrder.classList = 'step-order';
+        });
+        stepsOrder[3].classList = 'step-order active-step'
+    } else if(getComputedStyle(stepFour).display === 'block') {
+        backBtn.style.visibility = 'hidden';
+        nextStepBtn.style.visibility = 'hidden';
+        stepFour.style.display = 'none';
+        stepFive.style.display = 'flex';
+
     }
 }
 
@@ -81,5 +110,17 @@ cards.forEach(card => {
         cards[1].classList = 'card';
         cards[2].classList = 'card';
         card.classList = 'card selected-card';
+    });
+});
+
+checkBoxes.forEach(checkBox => {
+    checkBox.addEventListener('pointerup', ()=> {
+        if(!(checkBox.checked)) {
+            checkBox.parentElement.classList = 'service-card selected-card';
+            checkBox.parentElement.style.border = '1px solid #473dff';
+        } else {
+            checkBox.parentElement.classList = 'service-card';
+            checkBox.parentElement.style.border = '1px solid #dadada';
+        }
     });
 });
