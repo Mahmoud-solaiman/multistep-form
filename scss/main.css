@@ -383,4 +383,111 @@ body {
   font-size: 0.98rem;
   text-align: center;
   color: #5a5a5a;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0;
+  }
+  .app {
+    background-color: #f0f6ff;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+  .steps-tracker {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../images/bg-sidebar-mobile.svg");
+    padding: 25px 0 110px 0;
+    gap: 15px;
+  }
+  .steps-tracker .step .step-title {
+    display: none;
+  }
+  .steps-tracker .step .step-order {
+    padding: 9px 12px;
+  }
+  .steps-tracker .step .step-order:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+  }
+  .current-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .steps {
+    width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px 20px 20px;
+    margin-top: -70px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(184, 199, 212, 0.6);
+  }
+  .step-heading {
+    margin-bottom: 20px;
+  }
+  .step-heading h1 {
+    font-size: 1.6rem;
+  }
+  .step-heading h3 {
+    font-size: 1.05rem;
+  }
+  .item {
+    margin-bottom: 15px;
+  }
+  .item .label {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .item input {
+    margin-left: 0;
+    padding: 12px;
+  }
+  .control-btns {
+    background-color: #fff;
+    align-self: stretch;
+    padding: 15px;
+  }
+  .next-btn {
+    padding: 0.8em 1.5em;
+  }
+  .next-btn:hover {
+    opacity: 1;
+  }
+  .go-back-btn {
+    font-size: 0.95rem;
+  }
+  .go-back-btn:hover {
+    color: #9699ab;
+  }
+  .billing-cards {
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+  }
+  .card-icon {
+    margin: 0;
+  }
+  .monthly-or-yearly {
+    margin: 30px 0 0;
+    padding: 0.5em 0;
+  }
+  .monthly-or-yearly label {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=main.css.map */

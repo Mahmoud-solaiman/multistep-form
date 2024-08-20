@@ -1,0 +1,122 @@
+@media (max-width:375px) {
+    .container {
+        padding:0;
+    }
+
+    .app {
+        background-color: #f0f6ff;
+        width:100%;
+        flex-direction:column;
+        gap:0;
+        padding:0;
+    }
+
+    .steps-tracker {
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        background-image: url('../images/bg-sidebar-mobile.svg');
+        padding:25px 0 110px 0;
+        gap:15px;
+
+        & .step .step-title {
+            display:none;
+        }
+
+        & .step .step-order {
+            padding:9px 12px;
+            &:hover {
+                background-color: transparent;
+                color:#fff;
+                border-color:#fff;
+            }
+        }
+    }
+
+    .current-step {
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap:20px;
+    }
+
+    .steps {
+        width:90%;
+        height:fit-content;
+        padding:30px 20px 20px;
+        margin-top:-70px;
+        background-color:#fff;
+        border-radius:12px;
+        box-shadow:0 3px 10px #b8c7d499;
+    }
+
+    .step-heading {
+        margin-bottom:20px;
+        & h1 {
+            font-size:1.6rem;
+        }
+        & h3 {
+            font-size:1.05rem;
+        }
+    }
+
+    .item {
+        margin-bottom:15px;
+        & .label {
+            font: {
+                size:.8rem;
+                weight:600;
+            }
+        }
+        & input {
+            margin-left:0;
+            padding:12px;
+        }
+    }
+
+    .control-btns {
+        background-color: #fff;
+        align-self:stretch;
+        padding:15px;
+    }
+
+    .next-btn {
+        padding:.8em 1.5em;
+        &:hover {
+            opacity:1;
+        }
+    }
+
+    .go-back-btn {
+        font-size:.95rem;
+        &:hover {
+            color:#9699ab;
+        }
+    }
+
+    .billing-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        width:100%;
+        gap:15px;
+        align-items: center;
+    }
+
+    .card-icon {
+        margin:0;
+    }
+
+    .monthly-or-yearly {
+        margin:30px 0 0;
+        padding:.5em 0;
+        & label {
+            font-size:.9rem;
+        }
+    }
+}
